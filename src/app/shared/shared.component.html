@@ -1,0 +1,31 @@
+
+
+<app-carousel></app-carousel>
+<div class="container">
+  <div class="row">
+    <button class="col-3 btn-primary">{{categorie.name}}</button>
+
+    <div class="offset-6"></div>
+
+    <button id="btn1" class="col-3 btn-primary" (click)="seeMore(categorie)">Voir plus &raquo;</button>
+  </div>
+  <div class="row">
+    <div class="card-body">
+        <app-articles [state]='true' [categorie]='categorie'></app-articles>
+    </div>
+    </div>
+</div>
+<div class="container">
+  <div class="row">
+    <button class="col-3 btn-primary">{{categorie2.name}}</button>
+
+    <div class="offset-6"></div>
+
+    <button id="btn2" class="col-3 btn-primary" (click)="seeMore(categorie2)">Voir plus &raquo;</button>
+  </div>
+  <div class="row">
+    <div class="card-body">
+        <app-articles [state]='true' [categorie]='categorie2'></app-articles>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">France 24</a>
+    <button class="navbar-toggler" (click)="toggleNavbar()"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home </a>
+        </li>
+        <li class="nav-item">
+            <div class="row">
+                <div class="col">
+                  <div ngbDropdown class="d-inline-block" >
+                    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Catégories</button>
+                    <ul ngbDropdownMenu   aria-labelledby="dropdownBasic1">
+                      <li *ngFor="let item of categories"> <button  ngbDropdownItem (click)="onChange(item)">{{item.name}}</button> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+

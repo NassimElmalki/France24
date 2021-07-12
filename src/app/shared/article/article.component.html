@@ -1,0 +1,15 @@
+
+
+  <div class="container">
+    <div class="bg picsum-img-wrapper">
+ <img [src]="new.thumbnail_url" alt="">
+      <h2>{{new.title}}</h2>
+      <a [routerLink]="['/news',new|json]">
+      <div class="overlay carousel-caption">
+        <p>{{new.description|slice:0:70}}...</p>
+      </div>
+    </a>
+    </div>
+    </div>
+
+

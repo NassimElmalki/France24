@@ -1,0 +1,11 @@
+<ngb-carousel *ngIf="news">
+    <ng-template ngbSlide *ngFor="let new of news">
+      <div class="container picsum-img-wrapper" >
+        <img [src]="new.thumbnail_url">
+      </div>
+      <div class="content carousel-caption">
+        <h1><strong>{{new.title}}</strong> </h1>
+        <p>{{new.description}}</p>
+      </div>
+    </ng-template>
+    </ngb-carousel>

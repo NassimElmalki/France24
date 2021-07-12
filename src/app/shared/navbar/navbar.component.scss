@@ -1,0 +1,13 @@
+.navbar{
+    background-color: #7468F4;
+}
+.navbar-light .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, 1);
+}
+.btn:not(:disabled):not(.disabled) {
+    color: white;
+    border-color: white;
+}

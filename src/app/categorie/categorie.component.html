@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="offset-4"></div>
+    <button class="col-4 btn-primary">{{categorie.name}}</button>
+    <div class="offset-4"></div>
+  </div>
+</div>
+
+<app-articles [categorie]='categorie' [page]='currentPage'></app-articles>
+
+<div class="d-flex justify-content-center">
+  <ngb-pagination [collectionSize]="collectionSize" [page]="currentPage" (pageChange)="paginate($event)"
+    [directionLinks]="false"></ngb-pagination>
+</div>
